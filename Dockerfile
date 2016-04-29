@@ -12,6 +12,7 @@ RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
 EXPOSE 8888
 ENTRYPOINT ["docker-entrypoint.sh"]
+ADD hello_world.py hello_world.py
 RUN python hello_world.py
 CMD [""]
 
